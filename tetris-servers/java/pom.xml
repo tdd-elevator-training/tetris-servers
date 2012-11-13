@@ -17,7 +17,7 @@
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
             <version>${jetty.version}</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -59,6 +59,13 @@
                     <encoding>utf8</encoding>
                     <source>1.6</source>
                     <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <packagingExcludes>WEB-INF/lib/jetty*.jar,WEB-INF/lib/javax*.jar</packagingExcludes>
                 </configuration>
             </plugin>
         </plugins>
