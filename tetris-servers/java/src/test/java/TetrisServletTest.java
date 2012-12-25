@@ -8,7 +8,7 @@ public class TetrisServletTest {
 
     @Test
     public void should_accept_missing_input() {
-        assertEquals("left=0, right=0, rotate=0", servlet.answer("I", 4, 18, ""));
+        assertEquals("left=0, right=0, rotate=0", servlet.answer("I", 4, 18, "", "ITZO"));
     }
 
 }

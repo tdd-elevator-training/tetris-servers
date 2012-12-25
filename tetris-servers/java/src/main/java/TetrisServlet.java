@@ -12,8 +12,9 @@ public class TetrisServlet extends HttpServlet {
         int x = Integer.parseInt(req.getParameter("x"));
         int y = Integer.parseInt(req.getParameter("y"));
         String glass = req.getParameter("glass");
-        System.out.println(String.format("Figure: %s, coordinates: (%d, %d), glass %s", figure, x, y, glass));
-        resp.getWriter().write(answer(figure, x, y, glass));
+        String next = req.getParameter("next");
+        System.out.println(String.format("Figure: %s, coordinates: (%d, %d), glass %s, next %s", figure, x, y, glass, next));
+        resp.getWriter().write(answer(figure, x, y, glass, next));
     }
 
     final static int DO_NOT_ROTATE = 0;
@@ -21,7 +22,7 @@ public class TetrisServlet extends HttpServlet {
     final static int ROTATE_180_CLOCKWISE = 2;
     final static int ROTATE_90_COUNTERCLOCKWISE = 3;
 
-    String answer(String figure, int x, int y, String glass) {
+    String answer(String figure, int x, int y, String glass, String next) {
         // add "drop" to response when you need to drop a figure
         // for details please check http://codenjoy.com/portal/?p=170#commands
         return "left=0, right=0, rotate=0";
