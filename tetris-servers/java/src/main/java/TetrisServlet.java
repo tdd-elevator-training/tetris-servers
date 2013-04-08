@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class TetrisServlet extends HttpServlet {
+    private TetrisSolver solver = new TetrisSolver();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -14,18 +15,7 @@ public class TetrisServlet extends HttpServlet {
         String glass = req.getParameter("glass");
         String next = req.getParameter("next");
         System.out.println(String.format("Figure: %s, coordinates: (%d, %d), glass %s, next %s", figure, x, y, glass, next));
-        resp.getWriter().write(answer(figure, x, y, glass, next));
-    }
-
-    final static int DO_NOT_ROTATE = 0;
-    final static int ROTATE_90_CLOCKWISE = 1;
-    final static int ROTATE_180_CLOCKWISE = 2;
-    final static int ROTATE_90_COUNTERCLOCKWISE = 3;
-
-    String answer(String figure, int x, int y, String glass, String next) {
-        // add "drop" to response when you need to drop a figure
-        // for details please check http://codenjoy.com/portal/?p=170#commands
-        return "left=0, right=0, rotate=0";
+        resp.getWriter().write(solver.answer(figure, x, y, glass, next));
     }
 
     public static void main(String[] args) throws Exception {
