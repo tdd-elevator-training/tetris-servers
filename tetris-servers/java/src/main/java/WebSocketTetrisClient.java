@@ -16,7 +16,10 @@ import java.util.regex.Pattern;
 public class WebSocketTetrisClient {
 
 //    private static final String SERVER = "ws://codenjoy.com/tetris-contest/ws";
-    private static final String SERVER = "ws://localhost:8080/ws";
+//    private static final String SERVER = "ws://176.9.1.209/tetris-contest/ws";
+//    private static final String SERVER = "ws://codenjoy.com/tetris-contest/ws";
+    private static final String SERVER = "ws://tetrisj.jvmhost.net:12270/tetris-contest/ws";
+//    private static final String SERVER = "ws://localhost:8080/tetris-contest/ws";
     private static String userName = "Sergey";
     private static Pattern urlPattern = Pattern.compile("^figure=(\\w+)&x=(\\d+)&y=(\\d+)&glass=(.*)&next=(\\w*)$");
     private static WebSocketTetrisClient client;
