@@ -1,0 +1,3 @@
+/tetris-servers/java/*.iml
+/tetris-servers/java/target/classes/*.class
+/tetris-servers/java/target/test-classes/*.class
