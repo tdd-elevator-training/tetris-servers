@@ -1,3 +1,8 @@
 /tetris-servers/java/*.iml
 /tetris-servers/java/target/classes/*.class
 /tetris-servers/java/target/test-classes/*.class
+/tetris-servers/cpp/*.suo
+/tetris-servers/cpp/*.sdf
+/tetris-servers/cpp/*.bak
+/tetris-servers/cpp/testCaseCollection.xml
+/tetris-servers/cpp/Debug/*

@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TetrisLib", "TetrisLib\config\msvc2012\TetrisLib.vcxproj", "{E1BF8FC7-6D61-430E-8844-1D519D1D36E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TetrisTest", "TetrisTest\config\msvc2012\TetrisTest.vcxproj", "{FCA14223-B196-4461-83CD-5D62E9F805B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0} = {E1BF8FC7-6D61-430E-8844-1D519D1D36E0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TetrisApp", "TetrisApp\config\msvc2012\TetrisApp.vcxproj", "{8C0BC238-1457-4F06-9BFA-7442F5E90F28}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE2E216B-C806-4244-8205-6373A8B1C8B3} = {EE2E216B-C806-4244-8205-6373A8B1C8B3}
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0} = {E1BF8FC7-6D61-430E-8844-1D519D1D36E0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MySolver", "MySolver\config\msvc2012\MySolver.vcxproj", "{EE2E216B-C806-4244-8205-6373A8B1C8B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0} = {E1BF8FC7-6D61-430E-8844-1D519D1D36E0}
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924} = {E9C902F8-2FEE-4B61-9724-3D45A3330924}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MySolverTest", "MySolverTest\config\msvc2012\MySolverTest.vcxproj", "{A93C89D1-2006-441D-B241-5ABBED7A8449}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE2E216B-C806-4244-8205-6373A8B1C8B3} = {EE2E216B-C806-4244-8205-6373A8B1C8B3}
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924} = {E9C902F8-2FEE-4B61-9724-3D45A3330924}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TetrisAssert", "TetrisAssert\config\msvc2012\TetrisAssert.vcxproj", "{E9C902F8-2FEE-4B61-9724-3D45A3330924}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0} = {E1BF8FC7-6D61-430E-8844-1D519D1D36E0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TetrisAssertTest", "TetrisAssertTest\config\msvc2012\TetrisAssertTest.vcxproj", "{8DECF930-0F04-4B18-96CD-188B0C09556C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0} = {E1BF8FC7-6D61-430E-8844-1D519D1D36E0}
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924} = {E9C902F8-2FEE-4B61-9724-3D45A3330924}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0}.Debug|Win32.Build.0 = Debug|Win32
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0}.Release|Win32.ActiveCfg = Release|Win32
+		{E1BF8FC7-6D61-430E-8844-1D519D1D36E0}.Release|Win32.Build.0 = Release|Win32
+		{FCA14223-B196-4461-83CD-5D62E9F805B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCA14223-B196-4461-83CD-5D62E9F805B9}.Debug|Win32.Build.0 = Debug|Win32
+		{FCA14223-B196-4461-83CD-5D62E9F805B9}.Release|Win32.ActiveCfg = Release|Win32
+		{FCA14223-B196-4461-83CD-5D62E9F805B9}.Release|Win32.Build.0 = Release|Win32
+		{8C0BC238-1457-4F06-9BFA-7442F5E90F28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C0BC238-1457-4F06-9BFA-7442F5E90F28}.Debug|Win32.Build.0 = Debug|Win32
+		{8C0BC238-1457-4F06-9BFA-7442F5E90F28}.Release|Win32.ActiveCfg = Release|Win32
+		{8C0BC238-1457-4F06-9BFA-7442F5E90F28}.Release|Win32.Build.0 = Release|Win32
+		{EE2E216B-C806-4244-8205-6373A8B1C8B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE2E216B-C806-4244-8205-6373A8B1C8B3}.Debug|Win32.Build.0 = Debug|Win32
+		{EE2E216B-C806-4244-8205-6373A8B1C8B3}.Release|Win32.ActiveCfg = Release|Win32
+		{EE2E216B-C806-4244-8205-6373A8B1C8B3}.Release|Win32.Build.0 = Release|Win32
+		{A93C89D1-2006-441D-B241-5ABBED7A8449}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A93C89D1-2006-441D-B241-5ABBED7A8449}.Debug|Win32.Build.0 = Debug|Win32
+		{A93C89D1-2006-441D-B241-5ABBED7A8449}.Release|Win32.ActiveCfg = Release|Win32
+		{A93C89D1-2006-441D-B241-5ABBED7A8449}.Release|Win32.Build.0 = Release|Win32
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924}.Debug|Win32.Build.0 = Debug|Win32
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924}.Release|Win32.ActiveCfg = Release|Win32
+		{E9C902F8-2FEE-4B61-9724-3D45A3330924}.Release|Win32.Build.0 = Release|Win32
+		{8DECF930-0F04-4B18-96CD-188B0C09556C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8DECF930-0F04-4B18-96CD-188B0C09556C}.Debug|Win32.Build.0 = Debug|Win32
+		{8DECF930-0F04-4B18-96CD-188B0C09556C}.Release|Win32.ActiveCfg = Release|Win32
+		{8DECF930-0F04-4B18-96CD-188B0C09556C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
